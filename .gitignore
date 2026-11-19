@@ -1,0 +1,22 @@
+# Dependencias y archivos generados (se recrean con composer / la app)
+app/vendor/
+app/tmp/*
+app/logs/*
+
+# Configuración local con credenciales/salt (usar app_local.example.php como base)
+app/config/app_local.php
+app/config/.env
+.env
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores / IDE
+.vscode/
+.idea/
+*.swp
+
+# PHPUnit
+app/.phpunit.cache

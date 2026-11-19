@@ -1,0 +1,5 @@
+# Este .htaccess de la raíz de app/ ya NO es necesario: el DocumentRoot de Apache
+# apunta directamente a webroot/ (ver Dockerfile), así que dejarlo con reglas de
+# reescritura activas ("(.*) -> webroot/$1") provoca un bucle infinito, ya que
+# Apache aplica el .htaccess de cada directorio padre del archivo resuelto,
+# sin importar el DocumentRoot configurado.
